@@ -72,8 +72,8 @@ function App() {
           <div className="space-y-6 text-center">
             {/* Logo */}
             <div className="flex justify-center mb-8 animate-fade-in motion-reduce:animate-none">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-900 to-blue-400 flex items-center justify-center shadow-lg animate-float motion-reduce:animate-none hover:scale-110 transition-transform duration-300">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-white">
+              <div className="rocket-container w-20 h-20 rounded-full bg-gradient-to-br from-blue-900 to-blue-400 flex items-center justify-center shadow-lg animate-float motion-reduce:animate-none">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-white rocket-svg">
                   {/* Rocket body */}
                   <path d="M20 6L24 14H26L22 18L24 26L20 22L16 26L18 18L14 14H16L20 6Z" fill="currentColor"/>
                   {/* Rocket fins */}
@@ -82,6 +82,8 @@ function App() {
                   <path d="M18 26L16 30L20 28L24 30L22 26" fill="currentColor" opacity="0.6"/>
                   <path d="M19 26L17 29L20 27L23 29L21 26" fill="currentColor" opacity="0.4"/>
                 </svg>
+                {/* Trail effect */}
+                <div className="rocket-trail"></div>
               </div>
             </div>
             
